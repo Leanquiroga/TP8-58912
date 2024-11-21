@@ -78,12 +78,4 @@ if archivo is not None:
             col3.metric(label="📊 Unidades Vendidas", value=f"{unidades_total:,.0f}".replace(",", "."), delta=f"{variacion_unidades:.2f}%")
 
             fig = generar_grafico(data_producto, producto)
-            st.pyplot(fig)'
-
-def mostrar_informacion_alumno():
-    with st.container(border=True):
-        st.markdown('**Legajo:** 55.555')
-        st.markdown('**Nombre:** Juan Pérez')
-        st.markdown('**Comisión:** C1')
-
-mostrar_informacion_alumno()
+            st.pyplot(fig)
